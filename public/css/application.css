@@ -26,12 +26,13 @@ html {
   left:100px;
 }
 #map-canvas {
+
   margin: auto;
   position: relative;
   width: 800px;
   height: 600px;
   border: none;
-  top:80px;
+  top:10rem;
 
   -webkit-box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
   -moz-box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
