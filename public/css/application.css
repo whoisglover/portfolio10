@@ -20,7 +20,10 @@ html {
 }
 
 .title h1{
+  position: absolute;
+  bottom:-28px;
   padding: 0px;
+  left:100px;
 }
 #map-canvas {
   margin: auto;
