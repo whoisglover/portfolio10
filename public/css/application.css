@@ -17,10 +17,10 @@ body {
 }
 
 .title h1{
-  position: absolute;
-  bottom:-28px;
+  position: relative;
   padding: 0px;
-  left:100px;
+  left:10%;
+  top: 57%;
 }
 
 .container {
