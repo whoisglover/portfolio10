@@ -1,0 +1,41 @@
+html {
+ background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%, rgba(0,0,0,0.05) 100%);
+ background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.05)));
+ background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+ background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+ background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+ background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+}
+
+
+.title {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  height: 75px;
+  width: 100%
+  top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid black;
+}
+
+.title h1{
+  position: absolute;
+  bottom:-28px;
+  padding: 0px;
+  left:100px;
+}
+#map-canvas {
+
+  margin: auto;
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: none;
+  top:10rem;
+
+  -webkit-box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
+  box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
+  border-radius: 0.2em;
+}
