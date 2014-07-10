@@ -1,4 +1,9 @@
+html{
+  overflow-y: scroll;
+}
+
 body {
+  font-family: 'Lato', sans-serif;
 
 
 }
@@ -8,20 +13,60 @@ body {
 .title {
   font-family: 'Lato', sans-serif;
   position: relative;
+  overflow: hidden;
   height: 75px;
   width: 100%
   top: 0px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   border-bottom: 1px solid black;
+  padding-left: 125px;
+  padding-right: 125px;
 }
 
 .title h1{
   position: relative;
   padding: 0px;
-  left:10%;
-  top: 57%;
+  padding-top: 22px;
+  display: inline-block;
 }
+
+h4 {
+display: inline-block;
+float: right;
+
+}
+ h4{
+  right:10%;
+  padding-top:35px;
+}
+
+ h4:hover{
+  color: red;
+  padding-top:33px;
+
+}
+ h4 a{
+  text-decoration: none;
+}
+ h4 a:hover{
+  color:red;
+}
+ h4 a:visited{
+  color:black;
+  text-decoration: none;
+}
+ h4 a:visited:hover{
+  color:red;
+  text-decoration: none;
+}
+
+ h4 a:active{
+  color: red;
+  text-decoration: none;
+}
+
+
 
 .container {
 background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%, rgba(0,0,0,0.05) 100%);
@@ -36,8 +81,24 @@ background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%, rgba
   margin: auto;
 
 }
-#map-canvas {
 
+.inner-container {
+  border: 1px dotted blue;
+  width: 600px;
+  height: 100%;
+  margin: auto;
+}
+
+.chart {
+  width:60%;
+  height:400px;
+  margin: auto;
+  background: none;
+  padding-top: 110px;
+}
+
+#map-canvas {
+  display: none;
   margin: auto;
   position: relative;
   width: 49%;
