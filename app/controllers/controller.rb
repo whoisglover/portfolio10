@@ -46,6 +46,10 @@ get '/sf/map/month-points' do
   erb :month_map_points
 end
 
+get '/sf/map/forever-points' do
+  erb :forever_map_points
+end
+
 get '/sf/map/week-heat' do
   erb :week_map_heat
 end
