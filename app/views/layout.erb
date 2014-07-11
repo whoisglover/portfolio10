@@ -11,6 +11,7 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
@@ -19,7 +20,10 @@
   <title></title>
 </head>
 <body>
-  <div class="title"><h1>when&where</h1><h4><a href="/graphs">graphs</a></h4><h4><a href="/">map</a></h4></div>
+  <div class="title"><h1><a href="/">when&where</a></h1><div id="nav-links"><h4><a href="/">map</a></h4><h4><a href="/charts/1">charts</a></h4>&nbsp;<h4><a href="#" id ="settings-link"><i class="fa fa-cogs"></i></a></h4></div></div>
   <%= yield %>
 </body>
 </html>
+
+
+<script src="/js/settings.js"></script>

@@ -7,6 +7,7 @@ class CreateCrimes < ActiveRecord::Migration
       table.string :resolution
       table.string :date
       table.string :address
+      table.string :district
       table.float :xCoord
       table.float :yCoord
     end

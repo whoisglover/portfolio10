@@ -5,9 +5,6 @@ html{
 body {
   font-family: 'Lato', sans-serif;
 
-
-}
-* {
 }
 
 .title {
@@ -32,50 +29,71 @@ body {
 }
 
 h4 {
-display: inline-block;
-float: right;
+  display: inline-block;
 
 }
- h4{
-  right:10%;
-  padding-top:35px;
-}
 
- h4:hover{
+h4:hover{
   color: red;
-  padding-top:33px;
 
 }
- h4 a{
+h4 a{
   color:black;
   text-decoration: none;
 }
- h4 a:hover{
+h4 a:hover{
   color:red;
 }
- h4 a:visited{
+h4 a:visited{
   color:black;
   text-decoration: none;
 }
- h4 a:visited:hover{
+h4 a:visited:hover{
   color:red;
   text-decoration: none;
 }
 
- h4 a:active{
+h4 a:active{
   color: red;
   text-decoration: none;
 }
+
+h1:hover{
+  color: red;
+  padding-top:18px;
+
+}
+h1 a{
+  color:black;
+  text-decoration: none;
+}
+h1 a:hover{
+  color:red;
+}
+h1 a:visited{
+  color:black;
+  text-decoration: none;
+}
+h1 a:visited:hover{
+  color:red;
+  text-decoration: none;
+}
+
+h1 a:active{
+  color: red;
+  text-decoration: none;
+}
+
 
 
 
 .container {
-background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%, rgba(0,0,0,0.05) 100%);
- background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.05)));
- background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
- background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
- background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
- background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%) no-repeat;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%, rgba(0,0,0,0.05) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.05)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+  background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%) no-repeat;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -99,7 +117,7 @@ background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%, rgba
 }
 
 #map-canvas {
-  display: none;
+  /*display: none;*/
   margin: auto;
   position: relative;
   width: 49%;
@@ -109,5 +127,103 @@ background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%, rgba
   -webkit-box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
   -moz-box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
   box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
-  border-radius: 0.3rem;
+}
+
+.settings {
+  display: none;
+  overflow: hidden;
+  width: 20%;
+  height: 40%;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
+  box-shadow: -5px 4px 52px -7px rgba(0,0,0,0.75);
+}
+
+.settings h2 {
+  margin: 0px;
+padding-top: 12px;
+text-align: left;
+padding-left: 10%;
+}
+
+.settings table {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.settings tr {
+  height: 10px;
+}
+
+.settings td {
+  width: 50%;
+}
+
+.setting-nav {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px black solid;
+}
+
+.setting-body {
+
+  width: 100%;
+  height: 100%;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%, rgba(0,0,0,0.05) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(30%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.05)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%);
+  background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.05) 100%) no-repeat;
+}
+
+.myButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+  background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+  background-color:#f9f9f9;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#4ec200;
+  font-family:arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+  background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+  background-color:#e9e9e9;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+#nav-links {
+  float:right;
+  height: 100px;
+  padding-top: 35px;
 }

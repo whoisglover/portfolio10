@@ -1,10 +1,4 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
-
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
-
 
   function initialize() {
     // view = new View;
@@ -17,10 +11,10 @@ $(document).ready(function() {
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     $('#map-canvas').fadeIn(700)
     markers = []
-    console.log('heyy')
+    console.log('HEYYYY')
     var ajaxRequest = $.ajax({
       type: 'GET',
-      url: '/crimes/100'
+      url: '/crimes/30'
     })
     result = ajaxRequest.done(function(data){
       crime = JSON.parse(data)
@@ -38,13 +32,6 @@ $(document).ready(function() {
     });
 
   }
-  $('a').first().click(function(event){
-    event.preventDefault();
-    $('#map-canvas').fadeOut(700)
-    window.location = "/graphs";
-    console.log(this)
-  })
-
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
